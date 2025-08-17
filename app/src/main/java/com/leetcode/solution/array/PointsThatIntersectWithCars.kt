@@ -26,5 +26,5 @@ class Solution2848 {
 fun main() {
     val solution = Solution2848()
     check(solution.numberOfPoints(listOf(listOf(3,6), listOf(1,5), listOf(4,7))) == 7) {"testing1 wrong result"}
-    check(solution.numberOfPoints(listOf(listOf(1,3), listOf(5,8))) == 7) {"testing1 wrong result"}
+    check(solution.numberOfPoints(listOf(listOf(1,3), listOf(5,8))) == 7) {"testing2 wrong result"}
 }
