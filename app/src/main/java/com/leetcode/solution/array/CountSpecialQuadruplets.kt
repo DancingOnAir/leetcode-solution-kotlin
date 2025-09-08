@@ -2,7 +2,6 @@ package com.leetcode.solution.array
 
 class Solution1995 {
     fun countQuadruplets(nums: IntArray): Int {
-        nums.sort()
         var res = 0
         for (i in 0..nums.size - 4) {
             for (j in i + 1..nums.size - 3) {
