@@ -1,4 +1,4 @@
-package com.leetcode.solution.unionfind
+package com.leetcode.solution.dfs
 
 class Solution3619 {
     fun countIslands(grid: Array<IntArray>, k: Int): Int {
