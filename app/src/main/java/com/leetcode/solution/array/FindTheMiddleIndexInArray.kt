@@ -2,6 +2,10 @@ package com.leetcode.solution.array
 
 class Solution1991 {
     fun findMiddleIndex(nums: IntArray): Int {
+        return nums.mapIndexed{i,_ -> if (nums.take(i).sum() == nums.takeLast(nums.lastIndex - i).sum()) return i else -1}.first()
+    }
+
+    fun findMiddleIndex1(nums: IntArray): Int {
         val tot = nums.sum()
         var res = -1
         var acc = 0
