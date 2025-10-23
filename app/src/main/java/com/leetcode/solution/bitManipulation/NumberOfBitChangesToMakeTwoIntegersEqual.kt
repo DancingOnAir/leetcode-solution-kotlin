@@ -1,4 +1,4 @@
-package com.leetcode.solution
+package com.leetcode.solution.bitManipulation
 
 class Solution3226 {
     fun minChanges(n: Int, k: Int): Int {
