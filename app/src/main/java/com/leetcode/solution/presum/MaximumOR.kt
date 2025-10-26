@@ -1,6 +1,4 @@
-package com.leetcode.solution.bitManipulation
-
-import kotlin.math.max
+package com.leetcode.solution.presum
 
 class Solution2680 {
     fun maximumOr(nums: IntArray, k: Int): Long {
