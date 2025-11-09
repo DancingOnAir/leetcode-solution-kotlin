@@ -1,4 +1,4 @@
-package com.leetcode.solution.hashmap
+package com.leetcode.solution.hashtable
 
 class Solution3718 {
     fun missingMultiple(nums: IntArray, k: Int): Int {

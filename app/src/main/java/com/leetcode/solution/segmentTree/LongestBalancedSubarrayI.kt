@@ -1,10 +1,9 @@
-package com.leetcode.solution.array
-
-import kotlin.math.max
+package com.leetcode.solution.segmentTree
 
 class Solution3719 {
     fun longestBalanced(nums: IntArray): Int {
-
+        var res = 0
+        return res
 //        val n = nums.size
 //        var oddCnt = 0
 //        var evenCnt = 0

@@ -1,4 +1,4 @@
-package com.leetcode.solution.hashmap
+package com.leetcode.solution.hashtable
 
 class Solution2682 {
     fun circularGameLosers(n: Int, k: Int): IntArray {
