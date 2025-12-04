@@ -2,6 +2,10 @@ package com.leetcode.solution.math
 
 class Solution0728 {
     fun selfDividingNumbers(left: Int, right: Int): List<Int> {
+        return (left .. right).filter { x -> x.toString().all { (it != '0') && (x % (it - '0') == 0) } }
+    }
+
+    fun selfDividingNumbers1(left: Int, right: Int): List<Int> {
         return (left..right).filter { num -> "$num".all { (it != '0') && (num % (it - '0') == 0) } }
     }
 }
