@@ -1,4 +1,4 @@
-package com.leetcode.solution.array
+package com.leetcode.solution.dp
 
 class Solution3637 {
     fun isTrionic(nums: IntArray): Boolean {
