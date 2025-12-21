@@ -23,13 +23,15 @@ class Solution3770 {
 
     fun largestPrime(n: Int): Int {
         val primes = sieveOfEratosthenes(n)
+        var tot = 0
         var res = 0
         for (x in primes) {
-            res += x
-            if (res > n) {
-                res -= x
+            tot += x
+            if (tot > n) {
                 break
             }
+            if (tot in primes)
+                res = tot
         }
         return res
     }
@@ -37,6 +39,7 @@ class Solution3770 {
 
 fun main() {
     val solution = Solution3770()
+    check(solution.largestPrime(15) == 5) {"test3"}
     check(solution.largestPrime(20) == 17) {"test1"}
     check(solution.largestPrime(2) == 2) {"test2"}
 }
