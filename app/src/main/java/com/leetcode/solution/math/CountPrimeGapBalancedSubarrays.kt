@@ -46,11 +46,11 @@ class Solution3589 {
                 last2 = last
                 last = i
 
-                while (minQ.isNotEmpty() && x <= minQ.last()) {
+                while (minQ.isNotEmpty() && x <= nums[minQ.last()]) {
                     minQ.removeLast()
                 }
                 minQ.add(i)
-                while (maxQ.isNotEmpty() && x >= maxQ.last()) {
+                while (maxQ.isNotEmpty() && x >= nums[maxQ.last()]) {
                     maxQ.removeLast()
                 }
                 maxQ.add(i)
