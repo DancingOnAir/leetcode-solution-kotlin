@@ -1,4 +1,4 @@
-package com.leetcode.solution.string
+package com.leetcode.solution.stack
 
 class Solution1541 {
     fun minInsertions(s: String): Int {
