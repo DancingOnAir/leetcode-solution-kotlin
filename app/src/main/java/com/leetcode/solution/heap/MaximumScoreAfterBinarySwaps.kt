@@ -1,10 +1,19 @@
-package com.leetcode.solution.greedy
+package com.leetcode.solution.heap
+
+import java.util.PriorityQueue
 
 class Solution3781 {
     fun maximumScore(nums: IntArray, s: String): Long {
-        val n = s.count { it == '1' }
-        val x = nums.sortedDescending().take(n)
-        return nums.sortedDescending().take(n).sum().toLong()
+        val pq = PriorityQueue<Int>()
+        var res = 0L
+        for ((i, c) in nums.withIndex()) {
+            pq.add(-c)
+            if (s[i] == '1') {
+                res += -pq.poll()!!
+            }
+        }
+
+        return res
     }
 }
 
