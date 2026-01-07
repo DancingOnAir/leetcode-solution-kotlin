@@ -1,4 +1,4 @@
-package com.leetcode.solution.dp
+package com.leetcode.solution.greedy
 
 class Solution3557 {
     fun maxSubstrings(word: String): Int {
